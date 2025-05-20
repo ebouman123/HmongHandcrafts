@@ -63,7 +63,7 @@ function AdminPage() {
           name="date"
           value={formData.date}
           onChange={handleChange}
-          placeholder="Date (e.g., 2024-07-01T10:00)"
+          placeholder="Date"
           required
         />
         <input

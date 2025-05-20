@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/">Home</Link> | <Link to="/about">Bio</Link> | <Link to="/calendar">Calendar</Link>
+        <Link to="/">Home</Link> | <Link to="/about">Bio</Link> | <Link to="/calendar">Calendar</Link> | <Link to="/admin">Temporary Admin Link</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Landing />} />
