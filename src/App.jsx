@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Bio from "./pages/Bio";
 import Calendar from "./pages/CalendarPage/Calendar";
-import Admin from "./pages/Admin";
+import Admin from "./pages/AdminPage/Admin";
 import "./App.css"
 
 function App() {
