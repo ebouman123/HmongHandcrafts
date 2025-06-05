@@ -17,8 +17,8 @@ function CalendarPage() {
 
   return (
     <Layout>
-      <div>
-        <h2>Upcoming Free Classes</h2>
+      <div className="calendar-container">
+        <h2 className="calendar-header">Upcoming Free Classes</h2>
         <Calendar
           tileClassName={({ date }) =>
             datesWithEvents.some(

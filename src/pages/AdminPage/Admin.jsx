@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Layout from "../../components/Layout/Layout.jsx";
+import "./Admin.css"
 
 function AdminPage() {
   const [formData, setFormData] = useState({
@@ -50,10 +51,10 @@ function AdminPage() {
 
   return (
     <Layout>
-      <div>
-        <h2>Admin: Manage Classes</h2>
+      <div className="admin-container">
+        <h2 className="admin-header">Admin: Manage Classes</h2>
 
-        <form onSubmit={handleSubmit}>
+        <form className="admin-form" onSubmit={handleSubmit}>
           <input
             name="title"
             value={formData.title}
@@ -84,7 +85,7 @@ function AdminPage() {
         </form>
 
         <h3>Existing Classes</h3>
-        <ul>
+        <ul className="class-list">
           {classes.map((c) => (
             <li key={c.id}>
               <strong>{c.title}</strong> on {new Date(c.date).toLocaleString()}{" "}

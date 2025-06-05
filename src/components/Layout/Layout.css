@@ -40,3 +40,29 @@
     color: #888;
   }
   
+  @media (max-width: 600px) {
+    .layout-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .layout-nav {
+      margin-top: 10px;
+    }
+  
+    .layout-nav a {
+      display: inline-block;
+      margin: 5px 10px 0 0;
+      font-size: 0.95rem;
+    }
+  
+    .layout-title {
+      font-size: 1.5rem;
+    }
+  
+    .layout-main {
+      padding: 30px 15px;
+    }
+  }
+  
