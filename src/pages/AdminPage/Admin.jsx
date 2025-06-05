@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Layout from "../../components/Layout/Layout.jsx";
 
 function AdminPage() {
   const [formData, setFormData] = useState({
@@ -48,51 +49,53 @@ function AdminPage() {
   };
 
   return (
-    <div>
-      <h2>Admin: Manage Classes</h2>
+    <Layout>
+      <div>
+        <h2>Admin: Manage Classes</h2>
 
-      <form onSubmit={handleSubmit}>
-        <input
-          name="title"
-          value={formData.title}
-          onChange={handleChange}
-          placeholder="Title"
-          required
-        />
-        <input
-          name="date"
-          value={formData.date}
-          onChange={handleChange}
-          placeholder="Date"
-          required
-        />
-        <input
-          name="location"
-          value={formData.location}
-          onChange={handleChange}
-          placeholder="Location"
-        />
-        <textarea
-          name="description"
-          value={formData.description}
-          onChange={handleChange}
-          placeholder="Description"
-        />
-        <button type="submit">Add Class</button>
-      </form>
+        <form onSubmit={handleSubmit}>
+          <input
+            name="title"
+            value={formData.title}
+            onChange={handleChange}
+            placeholder="Title"
+            required
+          />
+          <input
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+            placeholder="Date"
+            required
+          />
+          <input
+            name="location"
+            value={formData.location}
+            onChange={handleChange}
+            placeholder="Location"
+          />
+          <textarea
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+            placeholder="Description"
+          />
+          <button type="submit">Add Class</button>
+        </form>
 
-      <h3>Existing Classes</h3>
-      <ul>
-        {classes.map((c) => (
-          <li key={c.id}>
-            <strong>{c.title}</strong> on{" "}
-            {new Date(c.date).toLocaleString()} at {c.location} <br />
-            <em>{c.description}</em> <br />
-            <button onClick={() => handleDelete(c.id)}>Delete</button>
-          </li>
-        ))}
-      </ul>
-    </div>
+        <h3>Existing Classes</h3>
+        <ul>
+          {classes.map((c) => (
+            <li key={c.id}>
+              <strong>{c.title}</strong> on {new Date(c.date).toLocaleString()}{" "}
+              at {c.location} <br />
+              <em>{c.description}</em> <br />
+              <button onClick={() => handleDelete(c.id)}>Delete</button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Layout>
   );
 }
 

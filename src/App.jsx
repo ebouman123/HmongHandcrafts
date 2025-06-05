@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Landing from "./pages/Landing";
+import Landing from "./pages/LandingPage/Landing";
 import Bio from "./pages/BioPage/Bio";
 import Calendar from "./pages/CalendarPage/Calendar";
 import Admin from "./pages/AdminPage/Admin";
@@ -8,12 +8,9 @@ import "./App.css"
 function App() {
   return (
     <Router>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/about">Bio</Link> | <Link to="/calendar">Calendar</Link> | <Link to="/admin">Temporary Admin Link</Link>
-      </nav>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<Bio />} />
+        <Route path="/bio" element={<Bio />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
