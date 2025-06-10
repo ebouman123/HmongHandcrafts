@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Calendar from "react-calendar";
-import Layout from "../../components/Layout/Layout.jsx";
 import "./calendar.css";
 
 function CalendarPage() {
@@ -16,7 +15,6 @@ function CalendarPage() {
   const datesWithEvents = events.map((e) => new Date(e.date));
 
   return (
-    <Layout>
       <div className="calendar-container">
         <h2 className="calendar-header">Upcoming Free Classes</h2>
         <Calendar
@@ -38,7 +36,6 @@ function CalendarPage() {
           ))}
         </ul>
       </div>
-    </Layout>
   );
 }
 

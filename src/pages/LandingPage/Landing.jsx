@@ -1,27 +1,50 @@
-import "./Landing.css";
-import Layout from "../../components/Layout/Layout.jsx";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <Layout>
-      <div className="landing">
-        <main className="landing-main">
-          <h2>Celebrate Hmong Heritage Through Art</h2>
-          <p>
-            Join Mandora in exploring traditional Hmong arts and crafts. Attend
-            free community classes, learn cultural history, and get inspired.
-          </p>
-          <a className="landing-button" href="/calendar">
-            View Upcoming Classes
-          </a>
-        </main>
-
-        <footer className="landing-footer">
-          © {new Date().getFullYear()} Mandora’s Craft Studio. All rights
-          reserved.
-        </footer>
+    <div className="flex flex-col min-h-screen">
+      {/* Fullscreen hero image */}
+      <div className="w-full h-[90vh] overflow-hidden">
+        <img
+          src="/images/mandora-feature.jpg"
+          alt="Mandora teaching"
+          className="w-full h-full object-cover"
+        />
       </div>
-    </Layout>
+
+      {/* Content block */}
+      <div className="max-w-3xl mx-auto px-4 py-8 -mt-16 bg-white rounded-xl shadow-lg text-center z-10">
+        <h1 className="text-3xl font-bold mb-2">Mandora Young</h1>
+        <h2 className="text-xl text-red-600 font-medium mb-4">
+          Hmong Textile Artist & Educator
+        </h2>
+        <p className="text-gray-700 mb-6">
+          Preserving traditional Hmong embroidery through hands-on teaching,
+          storytelling, and art.
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link
+            to="/calendar"
+            className="bg-pink-200 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-300 transition"
+          >
+            View Upcoming Classes
+          </Link>
+          <Link
+            to="/bio"
+            className="bg-pink-200 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-300 transition"
+          >
+            Learn About Mandora
+          </Link>
+          <Link
+            to="/admin"
+            className="bg-pink-200 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-300 transition"
+          >
+            Admin Panel
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 

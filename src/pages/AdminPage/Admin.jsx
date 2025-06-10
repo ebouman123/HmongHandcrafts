@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Layout from "../../components/Layout/Layout.jsx";
 import "./Admin.css"
 
 function AdminPage() {
@@ -50,7 +49,6 @@ function AdminPage() {
   };
 
   return (
-    <Layout>
       <div className="admin-container">
         <h2 className="admin-header">Admin: Manage Classes</h2>
 
@@ -96,7 +94,6 @@ function AdminPage() {
           ))}
         </ul>
       </div>
-    </Layout>
   );
 }
 

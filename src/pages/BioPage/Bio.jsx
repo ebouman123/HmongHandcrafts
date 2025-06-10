@@ -1,9 +1,7 @@
 import "../BioPage/Bio.css";
-import Layout from "../../components/Layout/Layout.jsx";
 
 const Bio = () => {
   return (
-    <Layout>
       <div className="bio-container">
         <h1>About Mandora Young</h1>
 
@@ -98,7 +96,6 @@ const Bio = () => {
           </ul>
         </section>
       </div>
-    </Layout>
   );
 };
 
