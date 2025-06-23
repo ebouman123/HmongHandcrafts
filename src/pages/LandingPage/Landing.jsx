@@ -6,7 +6,7 @@ const LandingPage = () => {
       {/* Fullscreen hero image */}
       <div className="w-full h-[90vh] overflow-hidden">
         <img
-          src="/images/mandora-feature.jpg"
+          src="/images/test.jpg"
           alt="Mandora teaching"
           className="w-full h-full object-cover"
         />
