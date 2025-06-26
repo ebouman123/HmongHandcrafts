@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Fullscreen hero image */}
       <div className="w-full h-[90vh] overflow-hidden">
         <img
           src="/images/test.jpg"
@@ -12,7 +11,6 @@ const LandingPage = () => {
         />
       </div>
 
-      {/* Content block */}
       <div className="max-w-3xl mx-auto px-4 py-8 -mt-16 bg-white rounded-xl shadow-lg text-center z-10">
         <h1 className="text-3xl font-bold mb-2">Mandora Young</h1>
         <h2 className="text-xl text-razzmatazz-700 font-medium mb-4">
@@ -35,6 +33,12 @@ const LandingPage = () => {
             className="bg-razzmatazz-800 hover:bg-razzmatazz-600 text-white px-6 py-3 rounded-full font-semibold transition"
           >
             Learn About Mandora
+          </Link>
+          <Link
+            to="/history"
+            className="bg-razzmatazz-800 hover:bg-razzmatazz-600 text-white px-6 py-3 rounded-full font-semibold transition"
+          >
+            Hmong Embroidery History
           </Link>
           <Link
             to="/admin"
