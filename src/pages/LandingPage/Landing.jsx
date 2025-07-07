@@ -41,6 +41,13 @@ const LandingPage = () => {
             Hmong Embroidery History
           </Link>
           <Link
+            to="/contact"
+            className="bg-icterine-500 hover:bg-icterine-600 text-black px-6 py-3 rounded-full font-semibold transition"
+          >
+            Contact Mandora
+          </Link>
+
+          <Link
             to="/admin"
             className="bg-razzmatazz-800 hover:bg-razzmatazz-600 text-white px-6 py-3 rounded-full font-semibold transition"
           >

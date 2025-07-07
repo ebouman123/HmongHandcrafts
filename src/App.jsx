@@ -4,17 +4,19 @@ import Bio from "./pages/BioPage/Bio";
 import Calendar from "./pages/CalendarPage/Calendar";
 import Admin from "./pages/AdminPage/Admin";
 import History from "./pages/HistoryPage/History";
+import Contact from "./pages/Contact/Contact";
 import "./App.css";
 
 function App() {
   return (
     <Router>
       <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/bio" element={<Bio />} />
-          <Route path="/calendar" element={<Calendar />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/history" element={<History />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
