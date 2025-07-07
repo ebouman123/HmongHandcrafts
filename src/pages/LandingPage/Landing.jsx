@@ -42,14 +42,20 @@ const LandingPage = () => {
           </Link>
           <Link
             to="/contact"
-            className="bg-icterine-500 hover:bg-icterine-600 text-black px-6 py-3 rounded-full font-semibold transition"
+            className="bg-razzmatazz-800 hover:bg-razzmatazz-600 text-white px-6 py-3 rounded-full font-semibold transition"
           >
             Contact Mandora
+          </Link>
+          <Link
+            to="/shop"
+            className="bg-risd_blue-500 hover:bg-risd_blue-600 text-white px-6 py-3 rounded-full font-semibold transition"
+          >
+            Shop
           </Link>
 
           <Link
             to="/admin"
-            className="bg-razzmatazz-800 hover:bg-razzmatazz-600 text-white px-6 py-3 rounded-full font-semibold transition"
+            className="bg-icterine-500 hover:bg-icterine-600 text-black px-6 py-3 rounded-full font-semibold transition"
           >
             Admin Panel
           </Link>

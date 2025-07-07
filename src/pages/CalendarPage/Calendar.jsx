@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Calendar from "react-calendar";
 import "./calendar.css";
+import HomeButton from "../../components/HomeButton";
 
 function CalendarPage() {
   const [events, setEvents] = useState([]);
@@ -15,27 +16,27 @@ function CalendarPage() {
   const datesWithEvents = events.map((e) => new Date(e.date));
 
   return (
-      <div className="calendar-container">
-        <h2 className="calendar-header">Upcoming Free Classes</h2>
-        <Calendar
-          tileClassName={({ date }) =>
-            datesWithEvents.some(
-              (d) => d.toDateString() === date.toDateString()
-            )
-              ? "highlight"
-              : null
-          }
-        />
-        <ul>
-          {events.map((e) => (
-            <li key={e.id}>
-              <strong>{new Date(e.date).toLocaleString()}</strong> - {e.title} @{" "}
-              {e.location}
-              <p>{e.description}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className="calendar-container">
+      <HomeButton />
+
+      <h2 className="calendar-header">Upcoming Free Classes</h2>
+      <Calendar
+        tileClassName={({ date }) =>
+          datesWithEvents.some((d) => d.toDateString() === date.toDateString())
+            ? "highlight"
+            : null
+        }
+      />
+      <ul>
+        {events.map((e) => (
+          <li key={e.id}>
+            <strong>{new Date(e.date).toLocaleString()}</strong> - {e.title} @{" "}
+            {e.location}
+            <p>{e.description}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

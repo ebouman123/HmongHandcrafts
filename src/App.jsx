@@ -5,6 +5,7 @@ import Calendar from "./pages/CalendarPage/Calendar";
 import Admin from "./pages/AdminPage/Admin";
 import History from "./pages/HistoryPage/History";
 import Contact from "./pages/Contact/Contact";
+import Shop from "./pages/Shop/Shop";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/history" element={<History />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </Router>
   );
