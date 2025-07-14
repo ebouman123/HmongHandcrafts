@@ -6,11 +6,13 @@ import Admin from "./pages/AdminPage/Admin";
 import History from "./pages/HistoryPage/History";
 import Contact from "./pages/Contact/Contact";
 import Shop from "./pages/Shop/Shop";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/bio" element={<Bio />} />
