@@ -61,4 +61,18 @@
     --color-razzmatazz-900: oklch(0.89 0.17 334.81);
   }
   
-
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100%) translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 0.3s ease forwards;
+  }
+  
