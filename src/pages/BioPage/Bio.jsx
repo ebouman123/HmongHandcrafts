@@ -5,7 +5,6 @@ const Bio = () => {
     <div className="px-4 sm:px-6 lg:px-8 py-10 max-w-4xl mx-auto text-raisin_black">
       <HomeButton />
 
-      {/* Hero Section */}
       <section className="text-center mb-12">
         <img
           src="/images/1000005442.jpg"
@@ -19,7 +18,6 @@ const Bio = () => {
         </p>
       </section>
 
-      {/* Bio */}
       <section className="space-y-6 mb-12">
         <p>
           Mandora was born in Vientiane, Laos, and came to the United States as
@@ -34,7 +32,6 @@ const Bio = () => {
         </p>
       </section>
 
-      {/* Traditional Art */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Traditional Art</h2>
         <p className="mb-6">
@@ -57,7 +54,6 @@ const Bio = () => {
         </div>
       </section>
 
-      {/* Teaching Experience */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Teaching Experience</h2>
         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -71,7 +67,6 @@ const Bio = () => {
         </ul>
       </section>
 
-      {/* Featured Work */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Featured Work</h2>
         <p className="mb-4">
@@ -91,31 +86,40 @@ const Bio = () => {
         </div>
       </section>
 
-      {/* Contact & Social */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Contact & Social</h2>
-        <ul className="space-y-2 text-lg">
-          <li>
-            📧 Email:{" "}
+      <section className="mt-8">
+        <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-900">
+            Contact & Social
+          </h2>
+
+          <p className="text-base text-gray-700 mb-6">
+            Email:{" "}
             <a
               href="mailto:Mypajntaub@gmail.com"
               className="text-kelly_green-700 hover:underline"
             >
               Mypajntaub@gmail.com
             </a>
-          </li>
-          <li>
-            📱 Instagram:{" "}
+          </p>
+
+          <div className="flex items-center gap-4">
             <a
-              href="https://www.instagram.com/mypajntaub"
+              href="https://www.instagram.com/mypajntaub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noreferrer"
-              className="text-kelly_green-700 hover:underline"
+              className="hover:opacity-80 transition-opacity"
             >
-              @mypajntaub
+              <img
+                src="/images/Instagram Logo.jpg"
+                alt="Instagram"
+                className="w-12 h-12 object-contain"
+              />
             </a>
-          </li>
-        </ul>
+            <span className="text-base text-gray-700">
+              Follow Mandora on Instagram
+            </span>
+          </div>
+        </div>
       </section>
     </div>
   );
